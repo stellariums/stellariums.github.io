@@ -21,7 +21,7 @@ redirect_from:
  <a href='https://scholar.google.com/citations?user=WMkMTb4AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=引用"></a>。
 
 我的研究领域包括：
-- 凝聚态物理的热输运
+- 凝聚态物理的热输运理论
 - AI for Science
   
 
