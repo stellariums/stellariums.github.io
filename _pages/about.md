@@ -17,8 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-我目前就读于中国科学技术大学的工程科学学院，导师为马浩教授
- <a href='https://scholar.google.com/citations?user=WMkMTb4AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=引用"></a>。
+我目前就读于中国科学技术大学的工程科学学院，导师为马浩教授。
 
 我的研究领域包括：
 - 凝聚态物理的热输运理论
