@@ -44,15 +44,17 @@
   
   h1, h2, h3, h4, h5, h6 {
     margin: 1em 0 0.5em;
-    line-height: 1.2;
+    line-height: 1.1;
     font-family: $header-font-family;
-    font-weight: bold;
+    font-weight: 900;
+    letter-spacing: -0.05em;
   }
   
   h1 {
     // margin: 4em 0 0.5em;
     margin-top: 1em;
-    font-size: $type-size-3;
+    font-size: $type-size-2; /* slightly smaller for extreme bold */
+    line-height: 0.9;
   }
   
   h2 {
@@ -75,8 +77,11 @@
     font-size: $type-size-6;
   }
   
-  small, .small {
+  small, .small, nav, .masthead__menu-item {
     font-size: $type-size-6;
+    font-family: $monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
   
   p {

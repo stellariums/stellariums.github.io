@@ -31,7 +31,9 @@
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
-    font-family: $sans-serif-narrow;
+    font-family: $monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
   }
 
   h3, h4 {
@@ -121,6 +123,9 @@
 
 .author__name {
   margin: 0;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  letter-spacing: -0.05em;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -130,14 +135,15 @@
 
 .sidebar .author__name {
   @include breakpoint($medium) {
-    font-size: $type-size-3;
+    font-size: $type-size-4;
   }
-  font-family: $serif;
-  font-size: $type-size-4;
+  font-size: $type-size-5;
 }
 
 .author__bio {
   margin: 0;
+  font-family: "Source Serif 4", serif;
+  font-style: italic;
 
   @include breakpoint($large) {
     margin-top: 10px;
@@ -149,7 +155,8 @@
   position: relative;
   display: table-cell;
   vertical-align: middle;
-  font-family: $serif;
+  font-family: $monospace;
+  text-transform: uppercase;
   z-index: 10;
   position: relative;
   margin-left: auto;
