@@ -50,7 +50,9 @@ redirect_from:
 <span class='anchor' id='-ryjx'></span>
 
 # 🏅 荣誉奖项
-- *(暂无)*
+- *2025年*, 获得 全国大学生数学建模竞赛 省一等奖
+- *2025年*, 获得 比亚迪奖学金
+- *2024年*, 获得 远见奖学金
 
 <span class='anchor' id='-xshy'></span>
 
