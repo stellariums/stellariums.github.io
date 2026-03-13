@@ -14,7 +14,8 @@
     color: $text-color;
     background-color: $background-color;
     font-family: $global-font-family;
-    line-height: 1.6;
+    font-size: $doc-font-size * 1px;
+    line-height: 1.8;
     position: relative;
     
     &::before {
@@ -86,6 +87,7 @@
   
   p {
     margin-bottom: 0.5em;
+    font-size: $type-size-5;
   }
   
   u,
@@ -100,6 +102,10 @@
   ul {
     padding-inline-start: 2em;
     margin-block-start: 0.5em;
+  }
+  
+  li {
+    font-size: $type-size-5;
   }
   
   del a {
