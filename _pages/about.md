@@ -75,7 +75,7 @@ redirect_from:
             <a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">University of Science and Technology of China</span><span class="lang-zh">中国科学技术大学</span></a>
           </h3>
           <p class="font-body text-lg text-on-surface-variant italic mb-4">
-            <a href="https://ses.ustc.edu.cn/main.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">School of Engineering Science · 中国科学技术大学工程科学学院</span><span class="lang-zh">工程科学学院</span></a>
+            <a href="https://ses.ustc.edu.cn/main.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">School of Engineering Science</span><span class="lang-zh">工程科学学院</span></a>
           </p>
           <div class="flex flex-wrap gap-2">
             <span class="dark-chip text-xs font-mono uppercase px-3 py-1 rounded" style="background:rgba(0,88,188,0.1);color:#0058bc;">
@@ -128,7 +128,7 @@ redirect_from:
             <a href="https://ahdmcm.ahu.edu.cn/2025/1119/c20667a378098/page.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Math Modeling Competition</span><span class="lang-zh">全国大学生数学建模竞赛</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
-            <span class="lang-en">Provincial 1st Prize · 省一等奖</span><span class="lang-zh">省一等奖</span>
+            <span class="lang-en">Provincial 1st Prize</span><span class="lang-zh">省一等奖</span>
           </p>
         </div>
       </div>
@@ -143,7 +143,7 @@ redirect_from:
             <a href="https://www.cms.org.cn/Home/comp/comp_details/id/1379.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Math Competition</span><span class="lang-zh">大学生数学竞赛</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
-            <span class="lang-en">Anhui 3rd Prize · 第17届 安徽赛区三等奖</span><span class="lang-zh">第17届 安徽赛区三等奖</span>
+            <span class="lang-en">17th, Anhui 3rd Prize</span><span class="lang-zh">第17届 安徽赛区三等奖</span>
           </p>
         </div>
       </div>
@@ -188,7 +188,7 @@ redirect_from:
             <a href="https://www.chemsoc.org.cn/notice/a5507.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
-            <span class="lang-en">Guangdong Provincial 1st Prize · 第37届 广东省一等奖</span><span class="lang-zh">第37届 广东省一等奖</span>
+            <span class="lang-en">37th, Guangdong Provincial 1st Prize</span><span class="lang-zh">第37届 广东省一等奖</span>
           </p>
         </div>
       </div>
@@ -203,7 +203,7 @@ redirect_from:
             <a href="https://www.chemsoc.org.cn/notice/a4949.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
-            <span class="lang-en">Guangdong Provincial 1st Prize · 第36届 广东省一等奖</span><span class="lang-zh">第36届 广东省一等奖</span>
+            <span class="lang-en">36th, Guangdong Provincial 1st Prize</span><span class="lang-zh">第36届 广东省一等奖</span>
           </p>
         </div>
       </div>
