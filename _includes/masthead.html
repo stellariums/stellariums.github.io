@@ -1,20 +1,26 @@
-<nav class="bg-[#fcf9f8]/70 backdrop-blur-md font-headline font-medium tracking-tight text-lg sticky top-0 z-50 transition-all duration-300 ease-in-out border-b border-outline-variant/10">
-  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-    <div class="hidden md:flex items-center gap-8">
+<style>
+  .nav-links { display: none; }
+  @media (min-width: 768px) { .nav-links { display: flex; } }
+  .mobile-menu-btn { display: flex; }
+  @media (min-width: 768px) { .mobile-menu-btn { display: none; } }
+</style>
+<nav class="bg-[#fcf9f8]/70 backdrop-blur-md font-headline font-medium tracking-tight text-lg sticky top-0 z-50 transition-all duration-300 ease-in-out border-b border-outline-variant/10" style="position:sticky;top:0;z-index:50;background:rgba(252,249,248,0.7);backdrop-filter:blur(12px);border-bottom:1px solid rgba(193,198,215,0.1);">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto" style="display:flex;justify-content:space-between;align-items:center;max-width:80rem;margin:0 auto;padding:1rem 2rem;">
+    <div class="nav-links items-center gap-8" style="align-items:center;gap:2rem;">
       {% for link in site.data.navigation.main %}
-        <a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 ease-in-out tracking-wide text-base" href="{{ link.url }}">{{ link.title }}</a>
+        <a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 ease-in-out tracking-wide text-base" href="{{ link.url }}" style="color:#414755;text-decoration:none;font-size:1rem;font-family:'Newsreader',serif;">{{ link.title }}</a>
       {% endfor %}
     </div>
     <!-- Mobile menu button -->
-    <button id="mobile-menu-btn" class="md:hidden text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1 focus:outline-none">
+    <button id="mobile-menu-btn" class="mobile-menu-btn text-on-surface-variant hover:text-on-surface transition-all items-center gap-1 focus:outline-none" style="align-items:center;gap:0.25rem;background:none;border:none;cursor:pointer;color:#414755;">
       <span class="material-symbols-outlined">menu</span>
     </button>
-    <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label text-sm uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all" href="mailto:{{ site.author.email }}">Contact</a>
+    <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label text-sm uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all" href="mailto:{{ site.author.email }}" style="background:#0058bc;color:#fff;padding:0.5rem 1.5rem;border-radius:0.5rem;font-family:'Space Grotesk',sans-serif;font-size:0.875rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;">Contact</a>
   </div>
   <!-- Mobile dropdown -->
-  <div id="mobile-menu" class="hidden md:hidden px-8 pb-4">
+  <div id="mobile-menu" style="display:none;padding:0 2rem 1rem;">
     {% for link in site.data.navigation.main %}
-      <a class="block py-2 text-on-surface-variant hover:text-on-surface transition-all text-base" href="{{ link.url }}">{{ link.title }}</a>
+      <a class="block py-2 text-on-surface-variant hover:text-on-surface transition-all text-base" href="{{ link.url }}" style="display:block;padding:0.5rem 0;color:#414755;text-decoration:none;font-size:1rem;">{{ link.title }}</a>
     {% endfor %}
   </div>
 </nav>
@@ -24,7 +30,8 @@
     var menu = document.getElementById('mobile-menu');
     if (btn && menu) {
       btn.addEventListener('click', function() {
-        menu.classList.toggle('hidden');
+        var isHidden = menu.style.display === 'none' || menu.style.display === '';
+        menu.style.display = isHidden ? 'block' : 'none';
       });
     }
   })();
