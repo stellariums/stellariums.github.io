@@ -185,7 +185,7 @@ redirect_from:
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">05</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
-            <span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span>
+            <a href="https://www.chemsoc.org.cn/notice/a5507.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
             <span class="lang-en">Guangdong Provincial 1st Prize · 第37届 广东省一等奖</span><span class="lang-zh">第37届 广东省一等奖</span>
@@ -200,7 +200,7 @@ redirect_from:
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">06</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
-            <span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span>
+            <a href="https://www.chemsoc.org.cn/notice/a4949.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
             <span class="lang-en">Guangdong Provincial 1st Prize · 第36届 广东省一等奖</span><span class="lang-zh">第36届 广东省一等奖</span>
