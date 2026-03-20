@@ -1,15 +1,31 @@
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+<nav class="bg-[#fcf9f8]/70 backdrop-blur-md font-headline font-medium tracking-tight text-lg sticky top-0 z-50 transition-all duration-300 ease-in-out border-b border-outline-variant/10">
+  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+    <div class="hidden md:flex items-center gap-8">
+      {% for link in site.data.navigation.main %}
+        <a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 ease-in-out tracking-wide text-base" href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
     </div>
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-btn" class="md:hidden text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-1 focus:outline-none">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+    <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label text-sm uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all" href="mailto:{{ site.author.email }}">Contact</a>
   </div>
-</div>
+  <!-- Mobile dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden px-8 pb-4">
+    {% for link in site.data.navigation.main %}
+      <a class="block py-2 text-on-surface-variant hover:text-on-surface transition-all text-base" href="{{ link.url }}">{{ link.title }}</a>
+    {% endfor %}
+  </div>
+</nav>
+<script>
+  (function() {
+    var btn = document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    if (btn && menu) {
+      btn.addEventListener('click', function() {
+        menu.classList.toggle('hidden');
+      });
+    }
+  })();
+</script>

@@ -1,19 +1,16 @@
-# main links links
+# main links
 main:
-  - title: "简介"
-    url: "/#about-me"
+  - title: "Home"
+    url: "/#hero"
 
-  - title: "学历"
-    url: "/#-xl"
+  - title: "Education"
+    url: "/#education"
 
-  - title: "论文与专利"
-    url: "/#-lwzl"
+  - title: "Honors"
+    url: "/#honors"
 
-  - title: "荣誉奖项"
-    url: "/#-ryjx"
+  - title: "Publications"
+    url: "/#publications"
 
-  - title: "学术会议"
-    url: "/#-xshy"
-
-  - title: "项目与经历"
-    url: "/#-gzsx"
+  - title: "Projects"
+    url: "/#projects"

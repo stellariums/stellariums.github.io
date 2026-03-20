@@ -3,40 +3,59 @@ layout: compress
 ---
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="zh-CN" class="no-js scroll-smooth">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
 
-    {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    <div id="main" role="main">
-      {% include sidebar.html %}
-    
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-        <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
-            {{ content }}
-          </section>
+    {% if page.permalink == "/" %}
+      <!-- Homepage: full-width editorial layout -->
+      <main class="max-w-7xl mx-auto px-8 py-16 lg:py-24">
+        {{ content }}
+      </main>
+
+      <!-- Editorial Footer -->
+      <footer class="bg-surface border-t border-outline-variant/15">
+        <div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 mt-20 max-w-7xl mx-auto">
+          <div class="mb-8 md:mb-0">
+            <p class="font-mono text-xs uppercase tracking-widest text-on-surface-variant/60">
+              &copy; {{ site.time | date: '%Y' }} {{ site.author.name }} &middot; {{ site.author.bio }}
+            </p>
+          </div>
+          <div class="flex gap-10">
+            {% if site.author.email %}
+            <a class="font-mono text-xs uppercase tracking-widest text-on-surface-variant/40 hover:text-on-surface-variant underline underline-offset-4 decoration-primary transition-all" href="mailto:{{ site.author.email }}">Email</a>
+            {% endif %}
+            {% if site.author.orcid %}
+            <a class="font-mono text-xs uppercase tracking-widest text-on-surface-variant/40 hover:text-on-surface-variant underline underline-offset-4 decoration-primary transition-all" href="{{ site.author.orcid }}">ORCID</a>
+            {% endif %}
+            {% if site.author.github %}
+            <a class="font-mono text-xs uppercase tracking-widest text-on-surface-variant/40 hover:text-on-surface-variant underline underline-offset-4 decoration-primary transition-all" href="https://github.com/{{ site.author.github }}">GitHub</a>
+            {% endif %}
+          </div>
         </div>
-      </article>
-    </div>
+      </footer>
+    {% else %}
+      <!-- Non-homepage: legacy sidebar layout -->
+      <div id="main" role="main">
+        {% include sidebar.html %}
+        <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+          {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+          <div class="page__inner-wrap">
+            <section class="page__content" itemprop="text">
+              {{ content }}
+            </section>
+          </div>
+        </article>
+      </div>
+    {% endif %}
 
     {% include scripts.html %}
 
-<div class="footer_site">
-<hr/>
-<div class="footer_copyright">
-  © 2025 中科大 · 林正阅 | 基于&nbsp
-  <a class="page_a"  href="https://github.com/RayeRen/acad-homepage.github.io">
-  acad
-  </a>&nbsp模板
-</div>
-</div>
   </body>
 </html>
