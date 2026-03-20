@@ -11,8 +11,9 @@ redirect_from:
 <!-- Hero Section -->
 <section class="editorial-grid mb-40" id="hero">
   <div class="col-span-12 lg:col-span-7 flex flex-col justify-center order-2 lg:order-1">
-    <p class="font-label text-primary font-medium tracking-[0.2em] uppercase mb-4">USTC Engineering Science</p>
+    <p class="font-label text-primary font-medium tracking-[0.2em] uppercase mb-4"><a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">USTC</a> · <a href="https://ses.ustc.edu.cn/main.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">Engineering Science</a></p>
     <h1 class="font-headline text-6xl lg:text-9xl leading-none mb-8 -ml-1">林正阅 <br/><span class="italic text-on-surface-variant" style="opacity:0.7;">Zhengyue Lin</span></h1>
+    <p class="font-headline text-2xl italic text-on-surface-variant mb-6" style="opacity:0.6;letter-spacing:0.02em;">Be Open. Be Active. Be Motivated.</p>
     <p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
       <span class="lang-en">Researcher focused on <span class="text-primary font-medium">Condensed Matter Physics</span> and <span class="text-primary font-medium">AI for Science</span>. Exploring heat transport theory and computational materials through the lens of modern intelligence.</span>
       <span class="lang-zh">研究方向为<span class="text-primary font-medium">凝聚态物理热输运理论</span>与<span class="text-primary font-medium">AI for Science</span>，致力于通过现代人工智能方法探索热输运理论与计算材料科学。</span>
@@ -71,11 +72,10 @@ redirect_from:
       <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
         <div>
           <h3 class="font-headline text-3xl mb-2">
-            <span class="lang-en">University of Science and Technology of China</span><span class="lang-zh">中国科学技术大学</span>
+            <a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">University of Science and Technology of China</span><span class="lang-zh">中国科学技术大学</span></a>
           </h3>
           <p class="font-body text-lg text-on-surface-variant italic mb-4">
-            <span class="lang-en">School of Engineering Science · 中国科学技术大学工程科学学院</span>
-            <span class="lang-zh">工程科学学院</span>
+            <a href="https://ses.ustc.edu.cn/main.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">School of Engineering Science · 中国科学技术大学工程科学学院</span><span class="lang-zh">工程科学学院</span></a>
           </p>
           <div class="flex flex-wrap gap-2">
             <span class="dark-chip text-xs font-mono uppercase px-3 py-1 rounded" style="background:rgba(0,88,188,0.1);color:#0058bc;">
@@ -125,7 +125,7 @@ redirect_from:
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">01</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
-            <span class="lang-en">Math Modeling Competition</span><span class="lang-zh">全国大学生数学建模竞赛</span>
+            <a href="https://ahdmcm.ahu.edu.cn/2025/1119/c20667a378098/page.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Math Modeling Competition</span><span class="lang-zh">全国大学生数学建模竞赛</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
             <span class="lang-en">Provincial 1st Prize · 省一等奖</span><span class="lang-zh">省一等奖</span>
@@ -140,7 +140,7 @@ redirect_from:
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">02</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
-            <span class="lang-en">Math Competition</span><span class="lang-zh">大学生数学竞赛</span>
+            <a href="https://www.cms.org.cn/Home/comp/comp_details/id/1379.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Math Competition</span><span class="lang-zh">大学生数学竞赛</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
             <span class="lang-en">Anhui 3rd Prize · 第17届 安徽赛区三等奖</span><span class="lang-zh">第17届 安徽赛区三等奖</span>
@@ -155,7 +155,7 @@ redirect_from:
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">03</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
-            <span class="lang-en">BYD Scholarship</span><span class="lang-zh">比亚迪奖学金</span>
+            <a href="https://foundation.byd.com/#/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">BYD Scholarship</span><span class="lang-zh">比亚迪奖学金</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
             <span class="lang-en">Academic Excellence</span><span class="lang-zh">学术卓越</span>
@@ -170,7 +170,7 @@ redirect_from:
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">04</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
-            <span class="lang-en">Yuanjian Scholarship</span><span class="lang-zh">远见奖学金</span>
+            <a href="https://yuantuapp.com/s" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Yuanjian Scholarship</span><span class="lang-zh">远见奖学金</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
             <span class="lang-en">Distinguished Merit</span><span class="lang-zh">杰出表现</span>
