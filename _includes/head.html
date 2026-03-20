@@ -36,33 +36,24 @@
           "surface": "#fcf9f8",
           "on-secondary": "#ffffff",
           "on-secondary-container": "#57657a",
-          "tertiary-fixed-dim": "#4cd7f6",
           "surface-container-lowest": "#ffffff",
           "on-primary": "#ffffff",
           "on-primary-fixed": "#001a41",
-          "on-primary-fixed-variant": "#004493",
           "tertiary": "#006577",
           "surface-container": "#f0eded",
           "surface-tint": "#005bc1",
           "background": "#fcf9f8",
-          "on-error-container": "#93000a",
-          "on-tertiary-container": "#f9fdff",
           "surface-dim": "#dcd9d9",
           "primary-fixed": "#d8e2ff",
-          "tertiary-fixed": "#acedff",
           "surface-container-low": "#f6f3f2",
-          "on-tertiary-fixed": "#001f26",
           "on-surface-variant": "#414755",
           "primary": "#0058bc",
           "surface-container-highest": "#e4e2e1",
           "secondary-fixed": "#d5e3fc",
-          "on-secondary-fixed-variant": "#3a485b",
           "secondary": "#515f74",
           "outline-variant": "#c1c6d7",
           "error": "#ba1a1a",
           "on-error": "#ffffff",
-          "on-tertiary-fixed-variant": "#004e5c",
-          "on-secondary-fixed": "#0d1c2e",
           "on-surface": "#1b1c1c",
           "primary-fixed-dim": "#adc6ff",
           "on-background": "#1b1c1c",
@@ -90,6 +81,16 @@
   }
 </script>
 
+<!-- Dark mode: restore theme before paint -->
+<script>
+  (function(){
+    var t = localStorage.getItem('theme');
+    if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
 <style>
   .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -104,9 +105,61 @@
     background-color: #fcf9f8;
     color: #1b1c1c;
   }
+
+  /* ===== Dark Mode Overrides ===== */
+  html.dark body {
+    background-color: #0f1117 !important;
+    color: #e4e2e1 !important;
+  }
+  /* Nav */
+  html.dark nav { background: rgba(15,17,23,0.7) !important; border-color: rgba(65,71,85,0.15) !important; }
+  html.dark nav a { color: #c1c6d7; }
+  html.dark nav a:hover { color: #e4e2e1; }
+  /* Body text & variants */
+  html.dark .bg-surface { background-color: #0f1117 !important; }
+  html.dark .text-on-surface { color: #e4e2e1 !important; }
+  html.dark .text-on-surface-variant { color: #c1c6d7 !important; }
+  html.dark .text-primary { color: #adc6ff !important; }
+  html.dark .text-secondary { color: #b9c7df !important; }
+  /* Surface containers */
+  html.dark .bg-surface-container-low { background-color: #1a1d24 !important; }
+  html.dark .bg-surface-container { background-color: #22262d !important; }
+  html.dark .bg-surface-container-high { background-color: #2a2e36 !important; }
+  html.dark .bg-surface-container-highest { background-color: #363a42 !important; }
+  /* Primary surfaces */
+  html.dark .bg-primary { background-color: #1a4a8a !important; }
+  html.dark .text-on-primary { color: #d8e2ff !important; }
+  html.dark .bg-primary-fixed { background-color: #002e6a !important; }
+  /* Secondary surfaces */
+  html.dark .bg-secondary-container { background-color: #3a485b !important; }
+  html.dark .text-on-secondary-container { color: #d5e3fc !important; }
+  /* Borders */
+  html.dark [class*="border-outline-variant"] { border-color: rgba(65,71,85,0.2) !important; }
+  /* Specific overrides for inline-styled elements */
+  html.dark .dark-nav-bg { background: rgba(15,17,23,0.7) !important; border-color: rgba(65,71,85,0.15) !important; }
+  html.dark .dark-contact-btn { background: #1a4a8a !important; }
+  html.dark .dark-card-bg { background-color: #1a1d24 !important; }
+  html.dark .dark-surface-bg { background-color: #0f1117 !important; }
+  /* Heading/text in dark */
+  html.dark h1, html.dark h2, html.dark h3, html.dark h4 { color: #e4e2e1; }
+  html.dark p { color: #c1c6d7; }
+  html.dark .font-mono { color: #8a8f9c; }
+  /* Number indicators */
+  html.dark .honor-num { color: #2a2e36 !important; }
+  html.dark .group:hover .honor-num { color: rgba(173,198,255,0.4) !important; }
+  /* Chips */
+  html.dark [class*="bg-primary\\/10"], html.dark .dark-chip { background-color: rgba(173,198,255,0.12) !important; color: #adc6ff !important; }
+  /* Publication cards */
+  html.dark .pub-card-border { border-color: #1a4a8a !important; }
+  html.dark .pub-card-border-secondary { border-color: #3a485b !important; }
+  html.dark .dark-card-inner { background-color: #0f1117 !important; border-color: rgba(65,71,85,0.1) !important; }
+  /* Footer */
+  html.dark footer { background-color: #0f1117 !important; border-color: rgba(65,71,85,0.15) !important; }
+
+  /* ===== Language toggle ===== */
+  .lang-zh { display: none; }
+  html.lang-zh .lang-en { display: none; }
+  html.lang-zh .lang-zh { display: unset; }
 </style>
 
 <meta http-equiv="cleartype" content="on">
-<head>
-  <base target="_blank">
-</head>

@@ -4,35 +4,81 @@
   .mobile-menu-btn { display: flex; }
   @media (min-width: 768px) { .mobile-menu-btn { display: none; } }
 </style>
-<nav class="bg-[#fcf9f8]/70 backdrop-blur-md font-headline font-medium tracking-tight text-lg sticky top-0 z-50 transition-all duration-300 ease-in-out border-b border-outline-variant/10" style="position:sticky;top:0;z-index:50;background:rgba(252,249,248,0.7);backdrop-filter:blur(12px);border-bottom:1px solid rgba(193,198,215,0.1);">
-  <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto" style="display:flex;justify-content:space-between;align-items:center;max-width:80rem;margin:0 auto;padding:1rem 2rem;">
-    <div class="nav-links items-center gap-8" style="align-items:center;gap:2rem;">
+<nav class="dark-nav-bg" style="position:sticky;top:0;z-index:50;background:rgba(252,249,248,0.7);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(193,198,215,0.1);transition:all 0.3s ease;">
+  <div style="display:flex;justify-content:space-between;align-items:center;max-width:80rem;margin:0 auto;padding:1rem 2rem;">
+    <div class="nav-links" style="align-items:center;gap:2rem;">
       {% for link in site.data.navigation.main %}
-        <a class="text-on-surface-variant hover:text-on-surface transition-all duration-300 ease-in-out tracking-wide text-base" href="{{ link.url }}" style="color:#414755;text-decoration:none;font-size:1rem;font-family:'Newsreader',serif;">{{ link.title }}</a>
+        <a href="{{ link.url }}" style="color:#414755;text-decoration:none;font-size:1rem;font-family:'Newsreader',serif;transition:color 0.3s;">{{ link.title }}</a>
       {% endfor %}
     </div>
     <!-- Mobile menu button -->
-    <button id="mobile-menu-btn" class="mobile-menu-btn text-on-surface-variant hover:text-on-surface transition-all items-center gap-1 focus:outline-none" style="align-items:center;gap:0.25rem;background:none;border:none;cursor:pointer;color:#414755;">
+    <button id="mobile-menu-btn" class="mobile-menu-btn" style="align-items:center;gap:0.25rem;background:none;border:none;cursor:pointer;color:#414755;">
       <span class="material-symbols-outlined">menu</span>
     </button>
-    <a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label text-sm uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all" href="mailto:{{ site.author.email }}" style="background:#0058bc;color:#fff;padding:0.5rem 1.5rem;border-radius:0.5rem;font-family:'Space Grotesk',sans-serif;font-size:0.875rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;">Contact</a>
+    <div style="display:flex;align-items:center;gap:0.75rem;">
+      <!-- Language toggle -->
+      <button id="lang-toggle-btn" style="display:flex;align-items:center;gap:0.25rem;background:none;border:none;cursor:pointer;color:#414755;transition:color 0.3s;" title="Switch Language">
+        <span class="material-symbols-outlined" style="font-size:20px;">language</span>
+        <span id="lang-label" style="font-family:'Space Grotesk',sans-serif;font-size:0.7rem;font-weight:bold;">EN / 中</span>
+      </button>
+      <!-- Dark mode toggle -->
+      <button id="theme-toggle-btn" style="display:flex;align-items:center;justify-content:center;background:none;border:none;cursor:pointer;color:#414755;transition:color 0.3s;" title="Toggle Dark Mode">
+        <span id="theme-icon" class="material-symbols-outlined" style="font-size:20px;">dark_mode</span>
+      </button>
+      <!-- Contact -->
+      <a class="dark-contact-btn" href="mailto:{{ site.author.email }}" style="background:#0058bc;color:#fff;padding:0.5rem 1.5rem;border-radius:0.5rem;font-family:'Space Grotesk',sans-serif;font-size:0.875rem;text-transform:uppercase;letter-spacing:0.1em;text-decoration:none;transition:opacity 0.3s;">Contact</a>
+    </div>
   </div>
   <!-- Mobile dropdown -->
   <div id="mobile-menu" style="display:none;padding:0 2rem 1rem;">
     {% for link in site.data.navigation.main %}
-      <a class="block py-2 text-on-surface-variant hover:text-on-surface transition-all text-base" href="{{ link.url }}" style="display:block;padding:0.5rem 0;color:#414755;text-decoration:none;font-size:1rem;">{{ link.title }}</a>
+      <a href="{{ link.url }}" style="display:block;padding:0.5rem 0;color:#414755;text-decoration:none;font-size:1rem;transition:color 0.3s;">{{ link.title }}</a>
     {% endfor %}
   </div>
 </nav>
 <script>
-  (function() {
-    var btn = document.getElementById('mobile-menu-btn');
-    var menu = document.getElementById('mobile-menu');
-    if (btn && menu) {
-      btn.addEventListener('click', function() {
-        var isHidden = menu.style.display === 'none' || menu.style.display === '';
-        menu.style.display = isHidden ? 'block' : 'none';
-      });
-    }
-  })();
+(function() {
+  // Mobile menu
+  var menuBtn = document.getElementById('mobile-menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  if (menuBtn && menu) {
+    menuBtn.addEventListener('click', function() {
+      menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+    });
+  }
+
+  // Dark mode toggle
+  var themeBtn = document.getElementById('theme-toggle-btn');
+  var themeIcon = document.getElementById('theme-icon');
+  function updateThemeIcon() {
+    var isDark = document.documentElement.classList.contains('dark');
+    if (themeIcon) themeIcon.textContent = isDark ? 'light_mode' : 'dark_mode';
+  }
+  updateThemeIcon();
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function() {
+      var isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      updateThemeIcon();
+    });
+  }
+
+  // Language toggle
+  var langBtn = document.getElementById('lang-toggle-btn');
+  var langLabel = document.getElementById('lang-label');
+  var savedLang = localStorage.getItem('lang') || 'en';
+  if (savedLang === 'zh') document.documentElement.classList.add('lang-zh');
+  function updateLangLabel() {
+    var isZh = document.documentElement.classList.contains('lang-zh');
+    if (langLabel) langLabel.textContent = isZh ? '中 / EN' : 'EN / 中';
+  }
+  updateLangLabel();
+  if (langBtn) {
+    langBtn.addEventListener('click', function() {
+      var isZh = document.documentElement.classList.toggle('lang-zh');
+      localStorage.setItem('lang', isZh ? 'zh' : 'en');
+      updateLangLabel();
+    });
+  }
+})();
 </script>
