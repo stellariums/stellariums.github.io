@@ -1,19 +1,16 @@
-# main links links
+# main links
 main:
   - title: "简介"
-    url: "/#about-me"
+    url: "/#hero"
 
-  - title: "学历"
-    url: "/#-xl"
+  - title: "研究方向"
+    url: "/#research"
 
-  - title: "论文与专利"
-    url: "/#-lwzl"
+  - title: "学术背景"
+    url: "/#academic"
 
   - title: "荣誉奖项"
-    url: "/#-ryjx"
+    url: "/#honors"
 
-  - title: "学术会议"
-    url: "/#-xshy"
-
-  - title: "项目与经历"
-    url: "/#-gzsx"
+  - title: "论文与专利"
+    url: "/#publications"

@@ -3,12 +3,98 @@
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 <link rel="manifest" href="images/site.webmanifest">
 
-<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileColor" content="#10141a">
 <meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=M44lzPylqQ">
 <meta name="msapplication-config" content="images/browserconfig.xml?v=M44lzPylqQ">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#10141a">
 <link rel="stylesheet" href="assets/css/academicons.css"/>
 
+<!-- Tailwind configuration with custom design tokens -->
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        "surface": "#10141a",
+        "primary": "#e9c176",
+        "secondary": "#a8caed",
+        "on-surface": "#dfe2eb",
+        "on-surface-variant": "#c5c6cc",
+        "surface-container": "#1c2026",
+        "surface-container-high": "#262a31",
+        "surface-container-low": "#181c22",
+        "surface-container-highest": "#31353c",
+        "outline-variant": "#45474c",
+        "tertiary": "#cbc6bd",
+        "error": "#ffb4ab",
+        "primary-container": "#241700",
+        "primary-fixed": "#ffdea5",
+        "primary-fixed-dim": "#e9c176",
+        "on-primary": "#412d00",
+      },
+      fontFamily: {
+        'newsreader': ['"Newsreader"', 'Georgia', 'serif'],
+        'inter': ['"Inter"', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+}
+</script>
+
+<!-- Custom global styles for the dark theme -->
+<style type="text/tailwindcss">
+  @layer base {
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: #10141a;
+      color: #dfe2eb;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Override legacy styles on about page */
+    .dark-theme-override .masthead,
+    .dark-theme-override .page,
+    .dark-theme-override .page__inner-wrap,
+    .dark-theme-override .page__content,
+    .dark-theme-override #main {
+      background: transparent;
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      float: none;
+      width: 100%;
+    }
+    /* Hide legacy sidebar */
+    .dark-theme-override .sidebar {
+      display: none;
+    }
+    /* Custom scrollbar for dark theme */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #10141a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #45474c;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #c5c6cc;
+    }
+    /* Selection color */
+    ::selection {
+      background-color: rgba(233, 193, 118, 0.3);
+      color: #ffdea5;
+    }
+  }
+</style>
+
+<!-- MathJax for academic content -->
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({

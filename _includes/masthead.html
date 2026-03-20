@@ -1,15 +1,87 @@
-<div class="masthead">
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
-          {% endfor %}
-        </ul>
-        <ul class="hidden-links hidden"></ul>
-      </nav>
+<nav id="site-nav" class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_0_rgba(69,71,76,0.3)]">
+  <div class="flex justify-between items-center px-6 md:px-12 py-4 md:py-5 max-w-screen-2xl mx-auto">
+
+    <!-- Site name / logo -->
+    <a href="/" class="font-newsreader text-xl md:text-2xl font-bold text-primary hover:text-primary-fixed transition-colors duration-200 no-underline" target="_self">
+      {{ site.title }}
+    </a>
+
+    <!-- Desktop navigation links -->
+    <div class="hidden md:flex items-center gap-6 lg:gap-8">
+      {% for link in site.data.navigation.main %}
+        <a href="{{ link.url }}"
+           target="_self"
+           class="font-inter text-sm text-on-surface-variant hover:text-primary transition-colors duration-200 no-underline tracking-wide">
+          {{ link.title }}
+        </a>
+      {% endfor %}
+    </div>
+
+    <!-- Right side: utility buttons -->
+    <div class="flex items-center gap-3">
+      <!-- Dark mode indicator (purely decorative since we are always dark) -->
+      <button aria-label="Dark mode"
+              class="hidden md:flex items-center justify-center w-9 h-9 rounded-full text-primary hover:bg-surface-container-high transition-colors duration-200">
+        <span class="material-symbols-outlined" style="font-size: 20px;">dark_mode</span>
+      </button>
+
+      <!-- Mobile hamburger button -->
+      <button id="mobile-menu-btn"
+              aria-label="Toggle menu"
+              aria-expanded="false"
+              class="md:hidden flex items-center justify-center w-9 h-9 rounded-full text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors duration-200">
+        <span class="material-symbols-outlined" style="font-size: 22px;">menu</span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile navigation drawer -->
+  <div id="mobile-menu"
+       class="md:hidden hidden border-t border-outline-variant/30 bg-surface-container-low/95 backdrop-blur-md">
+    <div class="flex flex-col px-6 py-4 gap-1">
+      {% for link in site.data.navigation.main %}
+        <a href="{{ link.url }}"
+           target="_self"
+           class="mobile-nav-link font-inter text-sm text-on-surface-variant hover:text-primary hover:bg-surface-container/50 rounded-lg px-4 py-3 transition-colors duration-200 no-underline">
+          {{ link.title }}
+        </a>
+      {% endfor %}
     </div>
   </div>
-</div>
+</nav>
+
+<!-- Mobile menu toggle script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var menuBtn = document.getElementById('mobile-menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', function() {
+      var isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!isExpanded));
+      mobileMenu.classList.toggle('hidden');
+
+      // Toggle icon between menu and close
+      var icon = menuBtn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.textContent = isExpanded ? 'menu' : 'close';
+      }
+    });
+
+    // Close mobile menu when a link is clicked
+    var links = mobileMenu.querySelectorAll('.mobile-nav-link');
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        var icon = menuBtn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.textContent = 'menu';
+        }
+      });
+    }
+  }
+});
+</script>
