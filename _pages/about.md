@@ -159,7 +159,7 @@ redirect_from:
             <a href="https://foundation.byd.com/#/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">BYD Scholarship</span><span class="lang-zh">比亚迪奖学金</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
-            <span class="lang-en">Academic Excellence</span><span class="lang-zh">学术卓越</span>
+            <span class="lang-en">Outstanding Academic Performance</span><span class="lang-zh">综合成绩优异</span>
           </p>
         </div>
       </div>
@@ -174,7 +174,7 @@ redirect_from:
             <a href="https://yuantuapp.com/s" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Yuanjian Scholarship</span><span class="lang-zh">远见奖学金</span></a>
           </h3>
           <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
-            <span class="lang-en">Distinguished Merit</span><span class="lang-zh">杰出表现</span>
+            <span class="lang-en">Visionary Excellence</span><span class="lang-zh">远见卓识</span>
           </p>
         </div>
       </div>
