@@ -1,11 +1,17 @@
 <!doctype html>
-<html lang="zh-CN" class="dark">
+<html lang="zh-CN">
   <head>
+    <script>
+      (function(){
+        var t = localStorage.getItem('theme');
+        if (t !== 'light') document.documentElement.classList.add('dark');
+      })();
+    </script>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
-  <body class="dark-theme-override">
+  <body class="modern-layout">
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}

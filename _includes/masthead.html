@@ -1,4 +1,4 @@
-<nav id="site-nav" class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_0_rgba(69,71,76,0.3)]">
+<nav id="site-nav" class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_0_rgba(69,71,76,0.15)]">
   <div class="flex justify-between items-center px-6 md:px-12 py-4 md:py-5 max-w-screen-2xl mx-auto">
 
     <!-- Site name / logo -->
@@ -17,15 +17,21 @@
       {% endfor %}
     </div>
 
-    <!-- Right side: utility buttons -->
-    <div class="flex items-center gap-3">
-      <!-- Dark mode indicator (purely decorative since we are always dark) -->
-      <button aria-label="Dark mode"
+    <!-- Right side: theme toggle + mobile menu -->
+    <div class="flex items-center gap-2">
+      <!-- Theme toggle button (desktop) -->
+      <button id="theme-toggle"
+              aria-label="切换主题"
               class="hidden md:flex items-center justify-center w-9 h-9 rounded-full text-primary hover:bg-surface-container-high transition-colors duration-200">
-        <span class="material-symbols-outlined" style="font-size: 20px;">dark_mode</span>
+        <span class="material-symbols-outlined" style="font-size: 20px;">light_mode</span>
       </button>
 
-      <!-- Mobile hamburger button -->
+      <!-- Mobile: theme toggle + hamburger -->
+      <button id="mobile-theme-toggle"
+              aria-label="切换主题"
+              class="md:hidden flex items-center justify-center w-9 h-9 rounded-full text-primary hover:bg-surface-container-high transition-colors duration-200">
+        <span class="material-symbols-outlined" style="font-size: 20px;">light_mode</span>
+      </button>
       <button id="mobile-menu-btn"
               aria-label="Toggle menu"
               aria-expanded="false"
@@ -51,37 +57,72 @@
   </div>
 </nav>
 
-<!-- Mobile menu toggle script -->
+<!-- Theme toggle + mobile menu script -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var menuBtn = document.getElementById('mobile-menu-btn');
-  var mobileMenu = document.getElementById('mobile-menu');
+(function() {
+  function isDark() {
+    return document.documentElement.classList.contains('dark');
+  }
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener('click', function() {
-      var isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
-      menuBtn.setAttribute('aria-expanded', String(!isExpanded));
-      mobileMenu.classList.toggle('hidden');
-
-      // Toggle icon between menu and close
-      var icon = menuBtn.querySelector('.material-symbols-outlined');
-      if (icon) {
-        icon.textContent = isExpanded ? 'menu' : 'close';
-      }
-    });
-
-    // Close mobile menu when a link is clicked
-    var links = mobileMenu.querySelectorAll('.mobile-nav-link');
-    for (var i = 0; i < links.length; i++) {
-      links[i].addEventListener('click', function() {
-        mobileMenu.classList.add('hidden');
-        menuBtn.setAttribute('aria-expanded', 'false');
-        var icon = menuBtn.querySelector('.material-symbols-outlined');
-        if (icon) {
-          icon.textContent = 'menu';
-        }
-      });
+  function updateIcons() {
+    var iconName = isDark() ? 'light_mode' : 'dark_mode';
+    var btns = document.querySelectorAll('#theme-toggle .material-symbols-outlined, #mobile-theme-toggle .material-symbols-outlined');
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].textContent = iconName;
+    }
+    // Update meta theme-color
+    var meta = document.getElementById('meta-theme-color');
+    if (meta) {
+      meta.setAttribute('content', isDark() ? '#10141a' : '#fcf9f8');
     }
   }
-});
+
+  function toggleTheme() {
+    if (isDark()) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+    updateIcons();
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize icons on load
+    updateIcons();
+
+    // Desktop toggle
+    var toggle = document.getElementById('theme-toggle');
+    if (toggle) toggle.addEventListener('click', toggleTheme);
+
+    // Mobile toggle
+    var mobileToggle = document.getElementById('mobile-theme-toggle');
+    if (mobileToggle) mobileToggle.addEventListener('click', toggleTheme);
+
+    // Mobile menu
+    var menuBtn = document.getElementById('mobile-menu-btn');
+    var mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', function() {
+        var isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', String(!isExpanded));
+        mobileMenu.classList.toggle('hidden');
+        var icon = menuBtn.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = isExpanded ? 'menu' : 'close';
+      });
+
+      var links = mobileMenu.querySelectorAll('.mobile-nav-link');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+          menuBtn.setAttribute('aria-expanded', 'false');
+          var icon = menuBtn.querySelector('.material-symbols-outlined');
+          if (icon) icon.textContent = 'menu';
+        });
+      }
+    }
+  });
+})();
 </script>
