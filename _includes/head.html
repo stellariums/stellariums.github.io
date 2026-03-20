@@ -105,6 +105,11 @@
     background-color: #fcf9f8;
     color: #1b1c1c;
   }
+  img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
 
   /* ===== Dark Mode Overrides ===== */
   html.dark body {
@@ -163,3 +168,8 @@
 </style>
 
 <meta http-equiv="cleartype" content="on">
+<script>
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') e.preventDefault();
+  });
+</script>

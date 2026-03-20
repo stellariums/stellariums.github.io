@@ -52,9 +52,10 @@ redirect_from:
     </div>
   </div>
   <div class="col-span-12 lg:col-span-5 order-1 lg:order-2 mb-12 lg:mb-0">
-    <div class="relative group">
+    <div class="relative group" style="user-select:none;-webkit-user-select:none;">
       <div class="absolute -inset-6 bg-surface-container-low rounded-2xl -z-10"></div>
-      <img alt="林正阅" class="w-full aspect-[4/5] object-cover rounded-lg shadow-2xl transition-all duration-1000" src="{{ site.author.avatar }}"/>
+      <div style="position:absolute;inset:0;z-index:2;"></div>
+      <img alt="林正阅" class="w-full aspect-[4/5] object-cover rounded-lg shadow-2xl transition-all duration-1000" src="{{ site.author.avatar }}" draggable="false" style="pointer-events:none;-webkit-user-drag:none;"/>
     </div>
   </div>
 </section>
