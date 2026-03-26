@@ -216,9 +216,9 @@ redirect_from:
 <!-- Publications -->
 <section class="mb-40" id="publications">
   <h2 class="font-headline text-5xl mb-16 text-center">
-    <span class="lang-en">Publications &amp; Intellectual Property</span><span class="lang-zh">论文与专利</span>
+    <span class="lang-en">Publications</span><span class="lang-zh">论文</span>
   </h2>
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+  <div class="grid grid-cols-1 gap-12">
     <!-- Scholarly Works -->
     <div class="dark-card-bg rounded-2xl p-10 shadow-sm hover:shadow-md transition-shadow pub-card-border" style="background:#f6f3f2;border-top:8px solid #0058bc;">
       <div class="flex justify-between items-center mb-10">
@@ -231,22 +231,6 @@ redirect_from:
         <div class="dark-card-inner rounded-xl p-8" style="background:#fcf9f8;border:1px solid rgba(193,198,215,0.1);">
           <p class="font-body text-on-surface-variant text-center py-8 italic">
             <span class="lang-en">No publications yet</span><span class="lang-zh">暂无发表论文</span>
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- Patents -->
-    <div class="dark-card-bg rounded-2xl p-10 shadow-sm hover:shadow-md transition-shadow pub-card-border-secondary" style="background:rgba(228,226,225,0.3);border-top:8px solid #515f74;">
-      <div class="flex justify-between items-center mb-10">
-        <h3 class="font-label font-bold text-sm uppercase tracking-[0.2em] text-secondary">
-          <span class="lang-en">Patent Portfolio</span><span class="lang-zh">专利</span>
-        </h3>
-        <span class="material-symbols-outlined" style="color:rgba(81,95,116,0.5);">verified</span>
-      </div>
-      <div class="space-y-8">
-        <div class="dark-card-inner rounded-xl p-8" style="background:#fcf9f8;border:1px solid rgba(193,198,215,0.1);">
-          <p class="font-body text-on-surface-variant text-center py-8 italic">
-            <span class="lang-en">No patents yet</span><span class="lang-zh">暂无专利</span>
           </p>
         </div>
       </div>
