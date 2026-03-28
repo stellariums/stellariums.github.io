@@ -250,7 +250,7 @@ redirect_from:
               </div>
               <p class="font-body text-on-surface-variant leading-relaxed mb-2">
                 <span class="lang-en">Ke Li, ZhongTing Zhang, <strong>ZhengYue Lin*</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu, Hao Ma.</span>
-                <span class="lang-zh">Ke Li, ZhongTing Zhang, <strong>林正阅*</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu, Hao Ma.</span>
+                <span class="lang-zh">Ke Li, ZhongTing Zhang, <strong>ZhengYue Lin*</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu, Hao Ma.</span>
               </p>
               <p class="font-body text-on-surface-variant leading-relaxed mb-2" style="opacity:0.9;">
                 <span class="lang-en">* Co-first author.</span>
