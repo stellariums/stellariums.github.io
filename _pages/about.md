@@ -249,12 +249,12 @@ redirect_from:
                 </span>
               </div>
               <p class="font-body text-on-surface-variant leading-relaxed mb-2">
-                <span class="lang-en">Ke Li, ZhongTing Zhang, <strong>ZhengYue Lin*</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu, Hao Ma.</span>
-                <span class="lang-zh">Ke Li, ZhongTing Zhang, <strong>ZhengYue Lin*</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu, Hao Ma.</span>
+                <span class="lang-en">Ke Li, ZhongTing Zhang, <strong>ZhengYue Lin</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu*, Hao Ma*.</span>
+                <span class="lang-zh">Ke Li, ZhongTing Zhang, <strong>ZhengYue Lin</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu*, Hao Ma*.</span>
               </p>
               <p class="font-body text-on-surface-variant leading-relaxed mb-2" style="opacity:0.9;">
-                <span class="lang-en">* Co-first author.</span>
-                <span class="lang-zh">* 共同第一作者。</span>
+                <span class="lang-en">Co-first author: ZhengYue Lin. * Corresponding authors.</span>
+                <span class="lang-zh">共同第一作者：ZhengYue Lin。* 通讯作者。</span>
               </p>
               <p class="font-body text-on-surface-variant leading-relaxed mb-5" style="opacity:0.9;">
                 <span class="lang-en">Published online: Mar 27, 2026 · Journal: ACS Nano.</span>
