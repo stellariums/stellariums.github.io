@@ -228,11 +228,48 @@ redirect_from:
         <span class="material-symbols-outlined" style="color:rgba(0,88,188,0.5);">menu_book</span>
       </div>
       <div class="space-y-8">
-        <div class="dark-card-inner rounded-xl p-8" style="background:#fcf9f8;border:1px solid rgba(193,198,215,0.1);">
-          <p class="font-body text-on-surface-variant text-center py-8 italic">
-            <span class="lang-en">No publications yet</span><span class="lang-zh">暂无发表论文</span>
-          </p>
-        </div>
+        <article class="dark-card-inner rounded-xl p-6 md:p-8" style="background:#fcf9f8;border:1px solid rgba(193,198,215,0.1);">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <a class="lg:col-span-4 block overflow-hidden rounded-lg" href="https://pubs.acs.org/doi/10.1021/acsnano.6c00656" target="_blank" rel="noopener" aria-label="ACS Nano article">
+              <img src="{{ '/images/acsnano_article.jpg' | relative_url }}" alt="ACS Nano graphical abstract" class="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]"/>
+            </a>
+            <div class="lg:col-span-8">
+              <div class="flex flex-wrap items-center gap-3 mb-4">
+                <span class="dark-chip text-xs font-mono uppercase px-3 py-1 rounded" style="background:rgba(0,88,188,0.1);color:#0058bc;">ACS Nano</span>
+                <span class="font-mono text-xs text-on-surface-variant" style="opacity:0.8;">DOI: 10.1021/acsnano.6c00656</span>
+              </div>
+              <div class="flex flex-wrap items-center gap-3 mb-4">
+                <h4 class="font-headline text-2xl leading-tight">
+                  <a href="https://pubs.acs.org/doi/10.1021/acsnano.6c00656" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+                    Density-Driven to Phonon-Dominated: Crossover in Heat Capacity of Amorphous Carbons
+                  </a>
+                </h4>
+                <span class="dark-chip text-xs font-mono uppercase px-3 py-1 rounded" style="background:rgba(0,88,188,0.1);color:#0058bc;">
+                  <span class="lang-en">Co-first author</span><span class="lang-zh">共同第一作者</span>
+                </span>
+              </div>
+              <p class="font-body text-on-surface-variant leading-relaxed mb-2">
+                <span class="lang-en">Ke Li, ZhongTing Zhang, <strong>ZhengYue Lin*</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu, Hao Ma.</span>
+                <span class="lang-zh">Ke Li, ZhongTing Zhang, <strong>林正阅*</strong>, YeYao Zhang, ChenXuan Liu, HengAn Wu, YinBo Zhu, Hao Ma.</span>
+              </p>
+              <p class="font-body text-on-surface-variant leading-relaxed mb-2" style="opacity:0.9;">
+                <span class="lang-en">* Co-first author.</span>
+                <span class="lang-zh">* 共同第一作者。</span>
+              </p>
+              <p class="font-body text-on-surface-variant leading-relaxed mb-5" style="opacity:0.9;">
+                <span class="lang-en">Published online: Mar 27, 2026 · Journal: ACS Nano.</span>
+                <span class="lang-zh">在线发表时间：2026年3月27日 · 期刊：ACS Nano。</span>
+              </p>
+              <a href="https://pubs.acs.org/doi/10.1021/acsnano.6c00656" target="_blank" rel="noopener" class="inline-flex items-center gap-2 font-label text-xs uppercase tracking-[0.2em] text-primary hover:opacity-80 transition-opacity">
+                <span class="material-symbols-outlined" style="font-size:18px;">open_in_new</span>
+                <span>
+                  <span class="lang-en">View Publication</span>
+                  <span class="lang-zh">查看论文</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </div>
