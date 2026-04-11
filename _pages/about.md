@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 <!-- Hero Section -->
-<section class="editorial-grid mb-40" id="hero">
+<section class="editorial-grid mb-40" id="hero" data-reveal="section" data-reveal-group>
   <div class="col-span-12 lg:col-span-7 flex flex-col justify-center order-2 lg:order-1">
     <p class="font-label text-primary font-medium tracking-[0.2em] uppercase mb-4"><a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">USTC</a> · <a href="https://ses.ustc.edu.cn/main.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">Engineering Science</a></p>
     <h1 class="font-headline text-6xl lg:text-9xl leading-none mb-8 -ml-1">林正阅 <br/><span class="italic text-on-surface-variant" style="opacity:0.7;">Zhengyue Lin</span></h1>
@@ -52,7 +52,7 @@ redirect_from:
     </div>
   </div>
   <div class="col-span-12 lg:col-span-5 order-1 lg:order-2 mb-12 lg:mb-0">
-    <div class="relative group" style="user-select:none;-webkit-user-select:none;">
+    <div class="relative group" style="user-select:none;-webkit-user-select:none;" data-reveal="item" data-reveal-delay="120">
       <div class="absolute -inset-6 bg-surface-container-low rounded-2xl -z-10"></div>
       <div style="position:absolute;inset:0;z-index:2;"></div>
       <img alt="林正阅" class="w-full aspect-[4/5] object-cover rounded-lg shadow-2xl transition-all duration-1000" src="{{ site.author.avatar }}" draggable="false" style="pointer-events:none;-webkit-user-drag:none;"/>
@@ -61,8 +61,8 @@ redirect_from:
 </section>
 
 <!-- Education & Core Vision -->
-<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-40" id="education">
-  <div class="lg:col-span-8 bg-surface-container-low p-12 rounded-2xl dark-card-bg">
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-40" id="education" data-reveal="section" data-reveal-group>
+  <div class="lg:col-span-8 bg-surface-container-low p-12 rounded-2xl dark-card-bg" data-reveal="item">
     <div class="flex items-center gap-4 mb-10">
       <span class="material-symbols-outlined text-primary text-3xl">school</span>
       <h2 class="font-headline text-4xl">
@@ -92,7 +92,7 @@ redirect_from:
       </div>
     </div>
   </div>
-  <div class="lg:col-span-4 bg-primary text-on-primary p-12 rounded-2xl flex flex-col justify-between group overflow-hidden relative">
+  <div class="lg:col-span-4 bg-primary text-on-primary p-12 rounded-2xl flex flex-col justify-between group overflow-hidden relative" data-reveal="item">
     <span class="material-symbols-outlined text-6xl absolute -top-4 -right-4 rotate-12 transition-transform group-hover:scale-125" style="opacity:0.2;">auto_awesome</span>
     <span class="material-symbols-outlined text-5xl">lightbulb</span>
     <div>
@@ -106,7 +106,7 @@ redirect_from:
 </section>
 
 <!-- Academic Honors -->
-<section class="mb-40" id="honors">
+<section class="mb-40" id="honors" data-reveal="section">
   <div class="flex flex-col md:flex-row justify-between items-end mb-20 pb-12" style="border-bottom:1px solid rgba(193,198,215,0.15);">
     <div>
       <p class="font-label text-primary text-sm tracking-[0.3em] uppercase mb-4">Distinction</p>
@@ -119,9 +119,9 @@ redirect_from:
       <span class="lang-zh">学术卓越、竞赛成就与科研建模能力的认可。</span>
     </p>
   </div>
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12" data-reveal-group>
     <!-- 01 Math Modeling -->
-    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);">
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">01</span>
         <div>
@@ -136,7 +136,7 @@ redirect_from:
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
     <!-- 02 Math Competition -->
-    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);">
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">02</span>
         <div>
@@ -151,7 +151,7 @@ redirect_from:
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
     <!-- 03 BYD Scholarship -->
-    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);">
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">03</span>
         <div>
@@ -166,7 +166,7 @@ redirect_from:
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
     <!-- 04 Yuanjian Scholarship -->
-    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);">
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">04</span>
         <div>
@@ -181,7 +181,7 @@ redirect_from:
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2024</span>
     </div>
     <!-- 05 CChO 37th -->
-    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);">
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">05</span>
         <div>
@@ -196,7 +196,7 @@ redirect_from:
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2023</span>
     </div>
     <!-- 06 CChO 36th -->
-    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);">
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">06</span>
         <div>
@@ -214,13 +214,13 @@ redirect_from:
 </section>
 
 <!-- Publications -->
-<section class="mb-40" id="publications">
+<section class="mb-40" id="publications" data-reveal="section">
   <h2 class="font-headline text-5xl mb-16 text-center">
     <span class="lang-en">Publications</span><span class="lang-zh">论文</span>
   </h2>
-  <div class="grid grid-cols-1 gap-12">
+  <div class="grid grid-cols-1 gap-12" data-reveal-group>
     <!-- Scholarly Works -->
-    <div class="dark-card-bg rounded-2xl p-10 shadow-sm hover:shadow-md transition-shadow pub-card-border" style="background:#f6f3f2;border-top:8px solid #0058bc;">
+    <div class="dark-card-bg rounded-2xl p-10 shadow-sm hover:shadow-md transition-shadow pub-card-border" style="background:#f6f3f2;border-top:8px solid #0058bc;" data-reveal="item">
       <div class="flex justify-between items-center mb-10">
         <h3 class="font-label font-bold text-sm uppercase tracking-[0.2em] text-primary">
           <span class="lang-en">Scholarly Works</span><span class="lang-zh">学术论文</span>
@@ -228,7 +228,7 @@ redirect_from:
         <span class="material-symbols-outlined" style="color:rgba(0,88,188,0.5);">menu_book</span>
       </div>
       <div class="space-y-8">
-        <article class="dark-card-inner rounded-xl p-6 md:p-8" style="background:#fcf9f8;border:1px solid rgba(193,198,215,0.1);">
+        <article class="dark-card-inner rounded-xl p-6 md:p-8" style="background:#fcf9f8;border:1px solid rgba(193,198,215,0.1);" data-reveal="item" data-reveal-delay="140">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
             <a class="lg:col-span-4 block overflow-hidden rounded-lg" href="https://pubs.acs.org/doi/10.1021/acsnano.6c00656" target="_blank" rel="noopener" aria-label="ACS Nano article">
               <img src="{{ '/images/acsnano_article.jpg' | relative_url }}" alt="ACS Nano graphical abstract" class="w-full h-full object-cover transition-transform duration-500 hover:scale-[1.02]"/>
@@ -276,15 +276,15 @@ redirect_from:
 </section>
 
 <!-- Conferences & Projects -->
-<section class="mb-40" id="projects">
+<section class="mb-40" id="projects" data-reveal="section">
   <div class="flex justify-between items-end mb-16">
     <h2 class="font-headline text-5xl">
       <span class="lang-en">Conferences &amp; Projects</span><span class="lang-zh">学术会议与项目</span>
     </h2>
     <div style="height:1px;background:rgba(193,198,215,0.3);flex-grow:1;margin:0 2.5rem 1rem;" class="hidden md:block"></div>
   </div>
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-    <div class="dark-card-bg p-12 rounded-2xl" style="background:#f6f3f2;">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12" data-reveal-group>
+    <div class="dark-card-bg p-12 rounded-2xl" style="background:#f6f3f2;" data-reveal="item">
       <div class="flex items-center gap-3 mb-6">
         <span class="material-symbols-outlined text-primary">hub</span>
         <h3 class="font-headline text-2xl">
@@ -295,7 +295,7 @@ redirect_from:
         <span class="lang-en">No conference experience yet</span><span class="lang-zh">暂无学术会议经历</span>
       </p>
     </div>
-    <div class="dark-card-bg p-12 rounded-2xl" style="background:#f6f3f2;">
+    <div class="dark-card-bg p-12 rounded-2xl" style="background:#f6f3f2;" data-reveal="item">
       <div class="flex items-center gap-3 mb-6">
         <span class="material-symbols-outlined text-secondary">terminal</span>
         <h3 class="font-headline text-2xl">
