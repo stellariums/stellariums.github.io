@@ -362,11 +362,14 @@ redirect_from:
           <span class="lang-en">Projects &amp; Initiatives</span><span class="lang-zh">项目经历</span>
         </h3>
       </div>
+      <p class="font-label text-primary text-sm mb-5">
+        <span class="lang-en">One national-level and one university-level project · Total funding: RMB 23,000</span><span class="lang-zh">主持国家级、校级项目各 1 项 · 资助经费合计 23,000 元</span>
+      </p>
       <p class="font-body text-on-surface-variant leading-relaxed mb-4">
-        <span class="lang-en">Thermal transport and structure–property relationships in CNT-derived ordered carbon structures.</span><span class="lang-zh">碳纳米管衍生有序碳结构的热输运性质及构效关系研究。</span>
+        <span class="lang-en"><strong>Undergraduate Research Program:</strong> Thermal transport and structure–property relationships in CNT-derived ordered carbon structures.</span><span class="lang-zh"><strong>大学生研究计划（大研）：</strong>碳纳米管衍生有序碳结构的热输运性质及构效关系研究。</span>
       </p>
       <p class="font-body text-on-surface-variant leading-relaxed">
-        <span class="lang-en">Amorphous carbon synthesis and thermophysical characterization.</span><span class="lang-zh">无定形碳样品合成与热物性表征。</span>
+        <span class="lang-en"><strong>Undergraduate Innovation Program:</strong> Amorphous carbon synthesis and thermophysical characterization.</span><span class="lang-zh"><strong>大学生创新计划（大创）：</strong>无定形碳样品合成与热物性表征。</span>
       </p>
     </div>
   </div>
