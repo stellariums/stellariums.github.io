@@ -362,8 +362,11 @@ redirect_from:
           <span class="lang-en">Projects &amp; Initiatives</span><span class="lang-zh">项目经历</span>
         </h3>
       </div>
-      <p class="font-body text-on-surface-variant leading-relaxed italic">
-        <span class="lang-en">No project experience yet</span><span class="lang-zh">暂无项目经历</span>
+      <p class="font-body text-on-surface-variant leading-relaxed mb-4">
+        <span class="lang-en">Thermal transport and structure–property relationships in CNT-derived ordered carbon structures.</span><span class="lang-zh">碳纳米管衍生有序碳结构的热输运性质及构效关系研究。</span>
+      </p>
+      <p class="font-body text-on-surface-variant leading-relaxed">
+        <span class="lang-en">Amorphous carbon synthesis and thermophysical characterization.</span><span class="lang-zh">无定形碳样品合成与热物性表征。</span>
       </p>
     </div>
   </div>
