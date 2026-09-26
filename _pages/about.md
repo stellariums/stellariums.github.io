@@ -15,8 +15,8 @@ redirect_from:
     <h1 class="font-headline text-6xl lg:text-9xl leading-none mb-8 -ml-1">林正阅 <br/><span class="italic text-on-surface-variant" style="opacity:0.7;">Zhengyue Lin</span></h1>
     <p class="font-headline text-2xl italic text-on-surface-variant mb-6" style="opacity:0.6;letter-spacing:0.02em;">Be Open. Be Active. Be Motivated.</p>
     <p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed mb-10">
-      <span class="lang-en">Researcher focused on <span class="text-primary font-medium">Condensed Matter Physics</span> and <span class="text-primary font-medium">AI for Science</span>. Exploring heat transport theory and computational materials through the lens of modern intelligence.</span>
-      <span class="lang-zh">研究方向为<span class="text-primary font-medium">凝聚态物理热输运理论</span>与<span class="text-primary font-medium">AI for Science</span>，致力于通过现代人工智能方法探索热输运理论与计算材料科学。</span>
+      <span class="lang-en">I am a 2024 cohort undergraduate in the Department of Thermal Science and Energy Engineering at USTC. I study <span class="text-primary font-medium">heat transport in carbon materials</span> using molecular dynamics, with interests in computational materials and <span class="text-primary font-medium">AI for Science</span>.</span>
+      <span class="lang-zh">中国科学技术大学工程科学学院热科学和能源工程系2024级本科生。围绕<span class="text-primary font-medium">碳材料热输运</span>开展分子动力学模拟与计算材料研究，也关注<span class="text-primary font-medium">AI for Science</span>。</span>
     </p>
     <div class="flex flex-wrap gap-8 mb-10 items-center">
       {% if site.author.github %}
@@ -80,10 +80,10 @@ redirect_from:
           </p>
           <div class="flex flex-wrap gap-2">
             <span class="dark-chip text-xs font-mono uppercase px-3 py-1 rounded" style="background:rgba(0,88,188,0.1);color:#0058bc;">
-              <span class="lang-en">Undergraduate</span><span class="lang-zh">本科在读</span>
+              <span class="lang-en">Undergraduate · 2024 cohort</span><span class="lang-zh">2024级本科生</span>
             </span>
             <span class="dark-chip text-xs font-mono uppercase px-3 py-1 rounded" style="background:rgba(0,88,188,0.1);color:#0058bc;">
-              <span class="lang-en">Condensed Matter Physics</span><span class="lang-zh">凝聚态物理</span>
+              <span class="lang-en">Department of Thermal Science &amp; Energy Engineering</span><span class="lang-zh">热科学和能源工程系</span>
             </span>
             <span class="dark-chip text-xs font-mono uppercase px-3 py-1 rounded" style="background:rgba(0,88,188,0.1);color:#0058bc;">AI for Science</span>
           </div>
@@ -96,10 +96,10 @@ redirect_from:
     <span class="material-symbols-outlined text-6xl absolute -top-4 -right-4 rotate-12 transition-transform group-hover:scale-125" style="opacity:0.2;">auto_awesome</span>
     <span class="material-symbols-outlined text-5xl">lightbulb</span>
     <div>
-      <h2 class="font-headline text-4xl mb-6" style="color:inherit;">Core Vision</h2>
+      <h2 class="font-headline text-4xl mb-6" style="color:inherit;"><span class="lang-en">Research Focus</span><span class="lang-zh">研究方向</span></h2>
       <p class="font-body text-lg leading-relaxed" style="color:rgba(255,255,255,0.9);">
-        <span class="lang-en">Bridging fundamental physics and scalable artificial intelligence to accelerate material discovery and thermal management technologies.</span>
-        <span class="lang-zh">将基础物理与可扩展的人工智能相结合，加速材料发现与热管理技术的研究进程。</span>
+        <span class="lang-en">Exploring heat transport in carbon materials through molecular dynamics and computational methods.</span>
+        <span class="lang-zh">通过分子动力学模拟与计算方法，研究碳材料中的热输运问题。</span>
       </p>
     </div>
   </div>
@@ -120,10 +120,70 @@ redirect_from:
     </p>
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12" data-reveal-group>
-    <!-- 01 Math Modeling -->
+    <!-- 01 National Scholarship -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">01</span>
+        <div>
+          <h3 class="font-headline text-3xl group-hover:italic transition-all">
+            <span class="lang-en">National Scholarship</span><span class="lang-zh">国家奖学金</span>
+          </h3>
+          <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
+            <span class="lang-en">Awarded in 2026</span><span class="lang-zh">2026年获奖</span>
+          </p>
+        </div>
+      </div>
+      <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
+    </div>
+    <!-- 02 Rising Star Scholarship -->
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
+      <div class="flex items-center gap-8">
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">02</span>
+        <div>
+          <h3 class="font-headline text-3xl group-hover:italic transition-all">
+            <span class="lang-en">Pangdeng Zhixing Scholarship</span><span class="lang-zh">攀登之星奖学金</span>
+          </h3>
+          <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
+            <span class="lang-en">2025–2026 Academic Year</span><span class="lang-zh">2025—2026学年</span>
+          </p>
+        </div>
+      </div>
+      <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
+    </div>
+    <!-- 03 Mechanics Competition -->
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
+      <div class="flex items-center gap-8">
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">03</span>
+        <div>
+          <h3 class="font-headline text-3xl group-hover:italic transition-all">
+            <span class="lang-en">Anhui University Student Mechanics Competition</span><span class="lang-zh">安徽省大学生力学竞赛</span>
+          </h3>
+          <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
+            <span class="lang-en">First Prize</span><span class="lang-zh">一等奖</span>
+          </p>
+        </div>
+      </div>
+      <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
+    </div>
+    <!-- 04 Mathematical Contest in Modeling -->
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
+      <div class="flex items-center gap-8">
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">04</span>
+        <div>
+          <h3 class="font-headline text-3xl group-hover:italic transition-all">
+            <span class="lang-en">Mathematical Contest in Modeling</span><span class="lang-zh">美国大学生数学建模竞赛</span>
+          </h3>
+          <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
+            <span class="lang-en">Honorable Mention</span><span class="lang-zh">H奖</span>
+          </p>
+        </div>
+      </div>
+      <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
+    </div>
+    <!-- 05 Math Modeling -->
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
+      <div class="flex items-center gap-8">
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">05</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://ahdmcm.ahu.edu.cn/2025/1119/c20667a378098/page.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Math Modeling Competition</span><span class="lang-zh">全国大学生数学建模竞赛</span></a>
@@ -135,10 +195,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
-    <!-- 02 Math Competition -->
+    <!-- 06 Math Competition -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">02</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">06</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://www.cms.org.cn/Home/comp/comp_details/id/1379.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Math Competition</span><span class="lang-zh">大学生数学竞赛</span></a>
@@ -150,10 +210,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
-    <!-- 03 BYD Scholarship -->
+    <!-- 07 BYD Scholarship -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">03</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">07</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://foundation.byd.com/#/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">BYD Scholarship</span><span class="lang-zh">比亚迪奖学金</span></a>
@@ -165,10 +225,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
-    <!-- 04 Yuanjian Scholarship -->
+    <!-- 08 Yuanjian Scholarship -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">04</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">08</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://yuantuapp.com/s" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Yuanjian Scholarship</span><span class="lang-zh">远见奖学金</span></a>
@@ -180,10 +240,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2024</span>
     </div>
-    <!-- 05 CChO 37th -->
+    <!-- 09 CChO 37th -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">05</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">09</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://www.chemsoc.org.cn/notice/a5507.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span></a>
@@ -195,10 +255,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2023</span>
     </div>
-    <!-- 06 CChO 36th -->
+    <!-- 10 CChO 36th -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">06</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">10</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://www.chemsoc.org.cn/notice/a4949.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span></a>
