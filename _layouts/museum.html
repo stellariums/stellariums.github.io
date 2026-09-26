@@ -67,7 +67,7 @@
     .portrait-area { position: relative; display: flex; align-items: center; justify-content: center; padding: 35px 24px 55px 50px; }
     .portrait-area::before { content: ""; position: absolute; right: -3.2vw; top: 10%; width: 77%; height: 74%; border: 1px solid #c5b899; border-radius: 50% 50% 47% 53%; transform: rotate(-17deg); }
     .portrait-area::after { content: ""; position: absolute; left: 1%; bottom: 13%; width: 84px; height: 84px; border: 1px solid var(--brass); border-radius: 50%; opacity: .65; }
-    .portrait-mat { width: min(100%, 392px); position: relative; z-index: 1; padding: 19px 19px 13px; background: #e1d8c7; box-shadow: 15px 24px 45px #352f211f, 0 0 0 1px #d0c3ae; transform: rotate(2.5deg); }
+    .portrait-mat { width: min(100%, 392px); margin: 0 24px; position: relative; z-index: 1; padding: 19px 19px 13px; background: #e1d8c7; box-shadow: 15px 24px 45px #352f211f, 0 0 0 1px #d0c3ae; transform: rotate(2.5deg); }
     .portrait-mat img { width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover; object-position: 50% 30%; filter: saturate(.72) contrast(.94); }
     .portrait-mat figcaption { display: flex; justify-content: space-between; gap: 15px; color: #62594b; margin-top: 12px; font-family: Georgia, serif; font-size: .65rem; letter-spacing: .12em; text-transform: uppercase; }
     .intro-bottom { min-height: 86px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
@@ -112,6 +112,7 @@
     .index-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 9%; padding: 42px 0 5px; }
     .index-item { border-bottom: 1px solid var(--rule); padding: 21px 0; display: flex; justify-content: space-between; gap: 18px; align-items: baseline; }
     .index-item strong { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; }
+    .index-item strong a:hover { color: #866b47; text-decoration: underline; text-underline-offset: 5px; }
     .index-item small { color: #8b7152; font-size: .75rem; white-space: nowrap; }
     .education-strip { background: #dcd3c2; padding: clamp(24px, 4vw, 48px) 0; margin-top: clamp(100px, 11vw, 150px); }
     .education-inner { display: grid; grid-template-columns: 180px 1fr auto; gap: 22px; align-items: center; }
@@ -132,9 +133,9 @@
       .primary-nav.is-open { display: flex; }
       .primary-nav a { padding: 14px 0; border-bottom: 1px solid var(--rule); }
       .menu-button { display: block; }
-      .intro-stage { grid-template-columns: 1fr 36%; min-height: 550px; }
+      .intro-stage { grid-template-columns: 1fr 39%; min-height: 550px; }
       .intro-copy { padding-right: 0; }
-      .portrait-area { padding-left: 30px; }
+      .portrait-area { padding-left: 20px; padding-right: 16px; }
       .section-heading { grid-template-columns: 120px 1fr; }
       .section-heading .section-note { display: none; }
       .education-inner { grid-template-columns: 120px 1fr auto; }
@@ -233,7 +234,25 @@
 
     <section class="catalogue-section shell" id="projects" aria-labelledby="projects-title"><div class="section-heading"><span class="eyebrow">Catalogue / 02</span><h2 id="projects-title"><span class="zh">研究项目</span><span class="en">Research projects</span></h2><p class="section-note"><span class="zh">两项围绕碳材料结构与热物性的本科生研究。</span><span class="en">Two undergraduate studies in carbon materials and thermal properties.</span></p></div><div class="specimens"><article class="specimen"><div class="specimen-top"><p class="eyebrow">Object 01 / Ordered carbon</p><span class="eyebrow">USTC</span></div><h3><span class="zh">碳纳米管衍生有序碳结构的热输运性质及构效关系研究</span><span class="en">Thermal transport and structure–property relationships in CNT-derived ordered carbon</span></h3><p><span class="zh">校级大学生研究计划（大研）。研究碳纳米管衍生有序碳结构中的热输运。</span><span class="en">University-level Undergraduate Research Program. Studying heat transport in CNT-derived ordered carbon structures.</span></p><div class="funding"><strong>¥3,000</strong><span><span class="zh">项目资助</span><span class="en">Project funding</span></span></div></article><article class="specimen"><div class="specimen-top"><p class="eyebrow">Object 02 / Amorphous carbon</p><span class="eyebrow">National</span></div><h3><span class="zh">无定形碳样品合成与热物性表征</span><span class="en">Amorphous carbon synthesis and thermophysical characterization</span></h3><p><span class="zh">国家级大学生创新计划（大创）。关注无定形碳样品合成及热物性表征。</span><span class="en">National-level Undergraduate Innovation Program. Focused on amorphous carbon synthesis and thermophysical characterization.</span></p><div class="funding"><strong>¥20,000</strong><span><span class="zh">项目资助</span><span class="en">Project funding</span></span></div></article></div></section>
 
-    <section class="catalogue-section shell" id="honors" aria-labelledby="honors-title"><div class="section-heading"><span class="eyebrow">Archive / 03</span><h2 id="honors-title"><span class="zh">荣誉选录</span><span class="en">Selected honors</span></h2><p class="section-note"><span class="zh">按时间整理的学术与竞赛记录。</span><span class="en">A brief record of scholarships and competitions.</span></p></div><div class="index-list"><div class="index-item"><strong><span class="zh">国家奖学金</span><span class="en">National Scholarship</span></strong><small>2026</small></div><div class="index-item"><strong><span class="zh">攀登之星奖学金</span><span class="en">Pangdeng Zhixing Scholarship</span></strong><small>2026</small></div><div class="index-item"><strong><span class="zh">安徽省大学生力学竞赛 · 一等奖</span><span class="en">Anhui Mechanics Competition · First Prize</span></strong><small>2026</small></div><div class="index-item"><strong><span class="zh">美国大学生数学建模竞赛 · H 奖</span><span class="en">Mathematical Contest in Modeling · Honorable Mention</span></strong><small>2026</small></div><div class="index-item"><strong><span class="zh">全国大学生数学建模竞赛 · 省一等奖</span><span class="en">National Mathematical Modeling Contest · Provincial First Prize</span></strong><small>2025</small></div><div class="index-item"><strong><span class="zh">比亚迪奖学金</span><span class="en">BYD Scholarship</span></strong><small>2025</small></div></div></section>
+    <section class="catalogue-section shell" id="honors" aria-labelledby="honors-title">
+      <div class="section-heading">
+        <span class="eyebrow">Archive / 03</span>
+        <h2 id="honors-title"><span class="zh">荣誉奖项</span><span class="en">Academic honors</span></h2>
+        <p class="section-note"><span class="zh">按时间整理的学术与竞赛记录。</span><span class="en">Scholarships and competitions, organized by year.</span></p>
+      </div>
+      <div class="index-list">
+        <div class="index-item"><strong><span class="zh">国家奖学金</span><span class="en">National Scholarship</span></strong><small>2026</small></div>
+        <div class="index-item"><strong><span class="zh">攀登之星奖学金</span><span class="en">Pangdeng Zhixing Scholarship</span></strong><small>2026</small></div>
+        <div class="index-item"><strong><span class="zh">安徽省大学生力学竞赛 · 一等奖</span><span class="en">Anhui Mechanics Competition · First Prize</span></strong><small>2026</small></div>
+        <div class="index-item"><strong><span class="zh">美国大学生数学建模竞赛 · H 奖</span><span class="en">Mathematical Contest in Modeling · Honorable Mention</span></strong><small>2026</small></div>
+        <div class="index-item"><strong><a href="https://ahdmcm.ahu.edu.cn/2025/1119/c20667a378098/page.htm" target="_blank" rel="noopener"><span class="zh">全国大学生数学建模竞赛 · 省一等奖</span><span class="en">National Mathematical Modeling Contest · Provincial First Prize</span></a></strong><small>2025</small></div>
+        <div class="index-item"><strong><a href="https://www.cms.org.cn/Home/comp/comp_details/id/1379.html" target="_blank" rel="noopener"><span class="zh">第 17 届大学生数学竞赛 · 安徽赛区三等奖</span><span class="en">17th Math Competition · Anhui Third Prize</span></a></strong><small>2025</small></div>
+        <div class="index-item"><strong><a href="https://foundation.byd.com/#/" target="_blank" rel="noopener"><span class="zh">比亚迪奖学金</span><span class="en">BYD Scholarship</span></a></strong><small>2025</small></div>
+        <div class="index-item"><strong><a href="https://yuantuapp.com/s" target="_blank" rel="noopener"><span class="zh">远见奖学金</span><span class="en">Yuanjian Scholarship</span></a></strong><small>2024</small></div>
+        <div class="index-item"><strong><a href="https://www.chemsoc.org.cn/notice/a5507.html" target="_blank" rel="noopener"><span class="zh">第 37 届中国化学奥林匹克 · 广东省一等奖</span><span class="en">37th Chemistry Olympiad · Guangdong First Prize</span></a></strong><small>2023</small></div>
+        <div class="index-item"><strong><a href="https://www.chemsoc.org.cn/notice/a4949.html" target="_blank" rel="noopener"><span class="zh">第 36 届中国化学奥林匹克 · 广东省一等奖</span><span class="en">36th Chemistry Olympiad · Guangdong First Prize</span></a></strong><small>2022</small></div>
+      </div>
+    </section>
 
     <section class="education-strip" aria-label="Education"><div class="shell education-inner"><span class="eyebrow">Institution / USTC</span><div><h2><a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener"><span class="zh">中国科学技术大学</span><span class="en">University of Science and Technology of China</span></a></h2><p><span class="zh">工程科学学院 · 热科学和能源工程系 · 本科</span><span class="en">School of Engineering Science · Thermal Science &amp; Energy Engineering · Undergraduate</span></p></div><span class="year">2024 —</span></div></section>
   </main>
