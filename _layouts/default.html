@@ -10,6 +10,7 @@
 
   <body class="bg-surface text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
 
+    {% if page.permalink == "/" %}<div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>{% endif %}
     {% include masthead.html %}
 
     {% if page.permalink == "/" %}

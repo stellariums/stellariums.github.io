@@ -187,7 +187,49 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+  /* ===== Homepage dynamic effects ===== */
+  .scroll-progress {
+    position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 60;
+    background: linear-gradient(90deg, #0058bc, #00a3c4, #ff7a45);
+    transform: scaleX(0); transform-origin: 0 50%;
+  }
+  html, body { overflow-x: clip; }
+  .hero-shell { position: relative; isolation: isolate; }
+  .hero-lattice {
+    position: absolute; z-index: -1; top: -6rem; left: calc(50% - 50vw);
+    width: 100vw; height: calc(100% + 10rem);
+    -webkit-mask-image: radial-gradient(ellipse at 35% 45%, #000 30%, transparent 75%);
+            mask-image: radial-gradient(ellipse at 35% 45%, #000 30%, transparent 75%);
+  }
+  .role-caret { display: inline-block; margin-left: 2px; animation: caret-blink 1s steps(1) infinite; }
+  @keyframes caret-blink { 50% { opacity: 0; } }
+  .photo-tilt { transition: transform 0.25s ease-out; transform-style: preserve-3d; }
+  .photo-glare {
+    border-radius: 0.25rem; pointer-events: none; opacity: 0; transition: opacity 0.3s;
+    background: radial-gradient(circle at var(--glare-x, 50%) var(--glare-y, 50%), rgba(255,255,255,0.35), transparent 55%);
+  }
+  .photo-tilt:hover .photo-glare { opacity: 1; }
+  #honors .group { position: relative; }
+  #honors .group::before {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px;
+    background: linear-gradient(90deg, #0058bc, #ff7a45);
+    transform: scaleX(0); transform-origin: 0 50%; transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  #honors .group:hover::before { transform: scaleX(1); }
+  #honors .group:hover .honor-num { color: rgba(0,88,188,0.35) !important; }
+  .honor-num { transition: color 0.4s; }
+  #education > div, #projects .dark-card-bg, #publications article {
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s;
+  }
+  #education > div:hover, #projects .dark-card-bg:hover, #publications article:hover {
+    transform: translateY(-4px); box-shadow: 0 18px 40px -20px rgba(0,88,188,0.35);
+  }
+  nav a.nav-active { color: #0058bc !important; }
+  html.dark nav a.nav-active { color: #adc6ff !important; }
+
   @media (prefers-reduced-motion: reduce) {
+    .role-caret { animation: none; }
+    .photo-tilt, #education > div, #projects .dark-card-bg, #publications article { transition: none; transform: none !important; }
     html.js [data-reveal="section"],
     html.js [data-reveal="item"] {
       opacity: 1;
