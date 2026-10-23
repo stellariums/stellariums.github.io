@@ -22,3 +22,9 @@ Originally forked from [AcadHomepage](https://github.com/RayeRen/acad-homepage.g
 1. Install Jekyll build environment (`Ruby`, `RubyGems`, `GCC`, `Make`). See [Jekyll docs](https://jekyllrb.com/docs/installation/#requirements).
 2. Run `bundle exec jekyll serve` to start the local server.
 3. Open [http://127.0.0.1:4000](http://127.0.0.1:4000) in your browser.
+
+## Updating Homepage Content
+
+- Edit bilingual profile, honors, publications, and conference records in `_pages/about.md`; store conference photos in `images/`.
+- Keep the hero's honors count and the numbered honors list consistent. Use confirmed award names and dates; omit dates that have not been confirmed.
+- Run `bundle exec jekyll build`, then check both languages and the affected images at desktop and mobile widths before publishing.

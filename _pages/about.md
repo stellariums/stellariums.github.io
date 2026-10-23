@@ -57,7 +57,7 @@ redirect_from:
         <p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mt-2"><span class="lang-en">Publication</span><span class="lang-zh">学术论文</span></p>
       </div>
       <div>
-        <p class="font-headline text-5xl text-primary leading-none"><span data-count-to="10">10</span></p>
+        <p class="font-headline text-5xl text-primary leading-none"><span data-count-to="12">12</span></p>
         <p class="font-label text-xs uppercase tracking-[0.2em] text-on-surface-variant mt-2"><span class="lang-en">Honors</span><span class="lang-zh">荣誉奖项</span></p>
       </div>
       <div>
@@ -141,10 +141,40 @@ redirect_from:
     </p>
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-12" data-reveal-group>
-    <!-- 01 National Scholarship -->
+    <!-- Mechanics Outstanding Student Award -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
         <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">01</span>
+        <div>
+          <h3 class="font-headline text-3xl group-hover:italic transition-all">
+            <span class="lang-en">Outstanding Student Award in Mechanics</span><span class="lang-zh">力学优秀学生奖</span>
+          </h3>
+          <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
+            <span class="lang-en">Anhui Society of Theoretical and Applied Mechanics</span><span class="lang-zh">安徽省力学学会</span>
+          </p>
+        </div>
+      </div>
+      <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
+    </div>
+    <!-- USTC Outstanding Student Scholarship -->
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
+      <div class="flex items-center gap-8">
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">02</span>
+        <div>
+          <h3 class="font-headline text-3xl group-hover:italic transition-all">
+            <span class="lang-en">Outstanding Student Scholarship</span><span class="lang-zh">优秀学生奖学金</span>
+          </h3>
+          <p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2">
+            <span class="lang-en">Gold Award · USTC</span><span class="lang-zh">金奖 · 中国科学技术大学</span>
+          </p>
+        </div>
+      </div>
+      <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
+    </div>
+    <!-- 03 National Scholarship -->
+    <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
+      <div class="flex items-center gap-8">
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">03</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <span class="lang-en">National Scholarship</span><span class="lang-zh">国家奖学金</span>
@@ -156,10 +186,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
     </div>
-    <!-- 02 Rising Star Scholarship -->
+    <!-- 04 Rising Star Scholarship -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">02</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">04</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <span class="lang-en">Pangdeng Zhixing Scholarship</span><span class="lang-zh">攀登之星奖学金</span>
@@ -171,10 +201,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
     </div>
-    <!-- 03 Mechanics Competition -->
+    <!-- 05 Mechanics Competition -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">03</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">05</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <span class="lang-en">Anhui University Student Mechanics Competition</span><span class="lang-zh">安徽省大学生力学竞赛</span>
@@ -186,10 +216,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
     </div>
-    <!-- 04 Mathematical Contest in Modeling -->
+    <!-- 06 Mathematical Contest in Modeling -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">04</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">06</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <span class="lang-en">Mathematical Contest in Modeling</span><span class="lang-zh">美国大学生数学建模竞赛</span>
@@ -201,10 +231,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2026</span>
     </div>
-    <!-- 05 Math Modeling -->
+    <!-- 07 Math Modeling -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">05</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">07</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://ahdmcm.ahu.edu.cn/2025/1119/c20667a378098/page.htm" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Math Modeling Competition</span><span class="lang-zh">全国大学生数学建模竞赛</span></a>
@@ -216,10 +246,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
-    <!-- 06 Math Competition -->
+    <!-- 08 Math Competition -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">06</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">08</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://www.cms.org.cn/Home/comp/comp_details/id/1379.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Math Competition</span><span class="lang-zh">大学生数学竞赛</span></a>
@@ -231,10 +261,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
-    <!-- 07 BYD Scholarship -->
+    <!-- 09 BYD Scholarship -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">07</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">09</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://foundation.byd.com/#/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">BYD Scholarship</span><span class="lang-zh">比亚迪奖学金</span></a>
@@ -246,10 +276,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2025</span>
     </div>
-    <!-- 08 Yuanjian Scholarship -->
+    <!-- 10 Yuanjian Scholarship -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">08</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">10</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://yuantuapp.com/s" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Yuanjian Scholarship</span><span class="lang-zh">远见奖学金</span></a>
@@ -261,10 +291,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2024</span>
     </div>
-    <!-- 09 CChO 37th -->
+    <!-- 11 CChO 37th -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">09</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">11</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://www.chemsoc.org.cn/notice/a5507.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span></a>
@@ -276,10 +306,10 @@ redirect_from:
       </div>
       <span class="font-mono text-sm mt-4 md:mt-0" style="opacity:0.4;">2023</span>
     </div>
-    <!-- 10 CChO 36th -->
+    <!-- 12 CChO 36th -->
     <div class="group flex flex-col md:flex-row md:items-center justify-between py-12 px-4 transition-all duration-500" style="border-bottom:1px solid rgba(193,198,215,0.15);" data-reveal="item">
       <div class="flex items-center gap-8">
-        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">10</span>
+        <span class="honor-num font-mono text-6xl" style="color:#e4e2e1;">12</span>
         <div>
           <h3 class="font-headline text-3xl group-hover:italic transition-all">
             <a href="https://www.chemsoc.org.cn/notice/a4949.html" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;"><span class="lang-en">Chemistry Olympiad (CChO)</span><span class="lang-zh">中国化学奥林匹克</span></a>
@@ -372,9 +402,21 @@ redirect_from:
           <span class="lang-en">Academic Conferences</span><span class="lang-zh">学术会议</span>
         </h3>
       </div>
-      <p class="font-body text-on-surface-variant leading-relaxed italic">
-        <span class="lang-en">No conference experience yet</span><span class="lang-zh">暂无学术会议经历</span>
+      <p class="font-mono text-sm text-primary mb-4">
+        <span class="lang-en">Oct 22–23, 2026 · Chengdu, China</span><span class="lang-zh">2026年10月22—23日 · 成都</span>
       </p>
+      <h4 class="font-headline text-2xl leading-tight mb-4">
+        <span class="lang-en">2026 Annual Academic Meeting of the National Key Laboratory of Nuclear Reactor Technology</span><span class="lang-zh">核反应堆技术全国重点实验室2026年学术年会</span>
+      </h4>
+      <p class="font-body text-on-surface-variant leading-relaxed mb-6">
+        <span class="lang-en">Attended the annual academic meeting in Chengdu.</span><span class="lang-zh">赴成都参加学术年会。</span>
+      </p>
+      <figure>
+        <img src="{{ '/images/2026-10-chengdu-academic-meeting.jpg' | relative_url }}" alt="核反应堆技术全国重点实验室2026年学术年会参会合影 / Group photo at the 2026 annual academic meeting" class="w-full rounded-lg" width="1706" height="1279" loading="lazy"/>
+        <figcaption class="font-body text-sm text-on-surface-variant mt-3">
+          <span class="lang-en">Group photo at the meeting · Chengdu</span><span class="lang-zh">学术年会参会合影 · 成都</span>
+        </figcaption>
+      </figure>
     </div>
     <div class="dark-card-bg p-12 rounded-2xl" style="background:#f6f3f2;" data-reveal="item">
       <div class="flex items-center gap-3 mb-6">
